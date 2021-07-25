@@ -1,1 +1,120 @@
-// Specific CSS for your home-page
+body {
+  background: #FFFFFF;
+}
+
+.ml2 {
+  font-weight: 900;
+  font-size: 3.5em;
+}
+
+.ml2 .letter {
+  display: inline-block;
+  line-height: 1em;
+}
+
+.navbar {
+  height: 80px;
+  padding: 0;
+  // border-bottom: 1px solid #000000;
+  img {
+    width: 40px;
+  }
+}
+
+.footer {
+  height: 200px;
+  // border-bottom: 1px solid #000000;
+}
+
+.social-links {
+  line-height: 16px;
+  a {
+    font-size: 40px;
+    color: #000000;
+    transition: all 0.3s ease;
+    &:hover {
+      text-decoration: none;
+      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+}
+
+.max-width {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+
+.container {
+  border-left: 1px solid #000000;
+  border-right: 1px solid #000000;
+  padding: 0;
+}
+
+.top-line {
+  border-top: 1px solid #000000;
+}
+
+.bottom-line {
+  border-bottom: 1px solid #000000;
+}
+
+.min-height {
+  min-height: 100vh;
+}
+
+.banner {
+  min-height: 80vh;
+  border-top: 1px solid #000000;
+  border-bottom: 1px solid #000000;
+  position: relative;
+  background: linear-gradient(to right, #F3FFF7, #F3F4FF);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 160px;
+  @include for-small-devices-down {
+    min-height: 60vh;
+    padding-top: 100px;
+  }
+  p {
+    font-size: 30px;
+    letter-spacing: 4px;
+    font-weight: 200;
+    @include for-small-devices-down {
+      font-size: 25px;
+      letter-spacing: 3px;
+    }
+    @include for-phone-only {
+      font-size: 20px;
+      letter-spacing: 2px;
+    }
+  }
+  h1 {
+    font-family: 'DM Serif Display', serif;
+    font-size: 200px;
+    line-height: 118px;
+    padding: 0 0 16px 8px;
+    @include for-medium-devices-down {
+      font-size: 150px;
+      line-height: 88px;
+    }
+    @include for-small-devices-down {
+      font-size: 112px;
+      line-height: 65px;
+      padding: 0 0 8px 8px;
+    }
+    @include for-phone-only {
+      font-size: 21vw;
+      line-height: 60%;
+    }
+  }
+}
+
+.social {
+  border-bottom: 1px solid #000000;
+  padding: 24px;
+}
+
+
