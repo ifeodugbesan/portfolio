@@ -204,4 +204,62 @@ body {
 ///////////////////////////////// TESTIMONIALS /////////////////////////////////
 
 
+.testimonials {
+  border-bottom: 1px solid #000000;
+  padding: 24px 0;
+}
 
+.testimonial-card {
+  min-height: 340px;
+  width: 80%;
+  background: #FFFFFF;
+  display: flex;
+  position: relative;
+  z-index: 1;
+  border: 1px solid #000000;
+  @include for-medium-devices-down {
+    width: 94%;
+  }
+  @include for-small-devices-down {
+    flex-direction: column;
+  }
+  @include for-phone-only {
+    width: 90%;
+  }
+}
+
+
+.testimonial-image {
+  height: 100%;
+  width: 260px;
+  background-size: cover;
+  background-position: center;
+  flex-shrink: 0;
+  @include for-small-devices-down {
+    width: 80px;
+    height: 80px;
+    margin: 16px 16px 0;
+    border-radius: 50%;
+  }
+}
+
+.testimonial-message {
+  position: relative;
+  padding: 48px 0;
+}
+
+.quote {
+  position: absolute;
+  width: 40px;
+}
+
+.left-quote {
+  top: 0;
+  left: 0;
+}
+
+.right-quote {
+  bottom: 0;
+  right: 0;
+  transform: rotate(180deg);
+}
