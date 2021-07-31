@@ -102,9 +102,106 @@ body {
   }
 }
 
-.social {
+/////////////////////////////////// LE WAGON ///////////////////////////////////
+
+.le-wagon {
+  min-height: 40vh;
+  border-bottom: 1px solid #000000;
+  padding: 24px 240px 240px 24px;
+  position: relative;
+  @include for-medium-devices-down {
+    padding: 24px 160px 160px 24px;
+  }
+  @include for-small-devices-down {
+    padding: 24px 120px 120px 24px;
+  }
+  @include for-phone-only {
+    padding: 24px 80px 80px 24px;
+  }
+}
+
+.horiz-line {
+  border-bottom: 1px solid #000000;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 80px;
+  @include for-phone-only {
+    bottom: 60px;
+  }
+}
+
+.vert-line {
+  border-right: 1px solid #000000;
+  position: absolute;
+  right: 80px;
+  bottom: 0;
+  top: 0;
+  @include for-phone-only {
+    right: 60px;
+  }
+}
+
+.lw-logo {
+  position: absolute;
+  width: 80px;
+  bottom: 40px;
+  right: 40px;
+  border-radius: 50%;
+  border: 1px solid #000000;
+  @include for-small-devices-down {
+    width: 80px;
+    bottom: 40px;
+    right: 40px;
+  }
+  @include for-phone-only {
+    width: 60px;
+    bottom: 30px;
+    right: 30px;
+  }
+}
+
+///////////////////////////////////// BIO //////////////////////////////////////
+
+.bio {
   border-bottom: 1px solid #000000;
   padding: 24px;
 }
+
+/////////////////////////////////// PROJECTS ///////////////////////////////////
+
+.projects {
+  border-bottom: 1px solid #000000;
+  background: linear-gradient(to right, #F3FFF7, #F3F4FF);
+}
+
+.projects-row {
+  padding: 60px 0;
+  position: relative;
+  justify-content: space-evenly;
+}
+
+.project-card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-image {
+  border: 1px solid #000000;
+  position: relative;
+  z-index: 1;
+}
+
+.mid-line {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 50%;
+  border-bottom: 1px solid #000000;
+}
+
+///////////////////////////////// TESTIMONIALS /////////////////////////////////
+
 
 
