@@ -2,6 +2,31 @@ body {
   background: #FFFFFF;
 }
 
+h1 {
+  @include for-xsmall-phone-only {
+    font-size: 28px;
+  }
+}
+
+h2 {
+  @include for-xsmall-phone-only {
+    font-size: 22px;
+  }
+}
+
+h4 {
+  @include for-xsmall-phone-only {
+    font-size: 16px;
+  }
+}
+
+p {
+  @include for-xsmall-phone-only {
+    font-size: 14px;
+  }
+}
+
+
 .navbar {
   height: 80px;
   padding: 0;
@@ -179,6 +204,9 @@ body {
   padding: 60px 0;
   position: relative;
   justify-content: space-evenly;
+  @include for-small-devices-down {
+    padding: 0 0 60px;
+  }
 }
 
 .project-card {
@@ -203,43 +231,147 @@ body {
 
 ///////////////////////////////// TESTIMONIALS /////////////////////////////////
 
-
 .testimonials {
   border-bottom: 1px solid #000000;
   padding: 24px 0;
+  min-height: 800px;
 }
 
+.nav-pills {
+  a {
+    background-color: #FFFFFF;
+    color: #000000;
+    font-family: "DM Serif Display", "serif";
+    font-size: 26px;
+    @include for-xsmall-phone-only {
+      font-size: 20px;
+    }
+    &:hover {
+      text-decoration: none;
+      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .active {
+    text-decoration: none !important;
+    background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF) !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: transparent !important;
+  }
+}
+
+.carousel {
+  .carousel-indicators {
+    margin: 0;
+    width: 80%;
+    margin: 0 auto;
+    bottom: 60px;
+    .active {
+        background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF) !important;
+      }
+    li {
+      background: #000000;
+      border: none;
+      margin: 0;
+      flex: 1;
+      height: 1px;
+      opacity: 1;
+
+    }
+    @include for-medium-devices-down {
+      width: 94%;
+    }
+    @include for-phone-only {
+      width: 90%;
+    }
+  }
+}
+
+.carousel-control-prev, .carousel-control-next {
+  width: 10%;
+  opacity: 1;
+  img {
+    transition: all 0.2s ease;
+  }
+  &:hover {
+    img {
+      transform: scale(1.2);
+    }
+  }
+  @include for-medium-devices-down {
+    height: 60px;
+    top: unset;
+    padding-top: 24px;
+  }
+}
+
+.carousel-control-prev {
+  @include for-phone-only {
+    left: 12px;
+  }
+}
+
+.carousel-control-next {
+  @include for-phone-only {
+    right: 12px;
+  }
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+  height: unset;
+  width: 20px;
+  background-image: none;
+  img {
+    width: 100%;
+  }
+}
+
+.carousel-control-prev-icon {
+  transform: rotate(180deg);
+}
+
+
 .testimonial-card {
-  min-height: 340px;
+  min-height: 400px;
   width: 80%;
   background: #FFFFFF;
   display: flex;
   position: relative;
   z-index: 1;
   border: 1px solid #000000;
+  border-bottom: 0;
   @include for-medium-devices-down {
     width: 94%;
+    min-height: 476px;
   }
   @include for-small-devices-down {
     flex-direction: column;
   }
   @include for-phone-only {
     width: 90%;
+    min-height: 620px;
+  }
+  @include for-xsmall-phone-only {
+    min-height: 540px;
   }
 }
-
 
 .testimonial-image {
   height: 100%;
   width: 260px;
+  background-image: asset_url('le-wagon-testimonial-image.png');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
+  border-right: 1px solid #000000;
   @include for-small-devices-down {
+    background-image: asset_url('le-wagon-logo.png');
     width: 80px;
     height: 80px;
     margin: 16px 16px 0;
     border-radius: 50%;
+    border: none;
   }
 }
 
