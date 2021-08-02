@@ -28,7 +28,7 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload', defer: true %>
   </head>
 
-  <body>
+  <body class="<%= @dark_mode ? 'dark-mode' : 'light-mode' %>">
     <%= render 'shared/navbar' %>
     <%= yield %>
     <%= render 'shared/footer' %>

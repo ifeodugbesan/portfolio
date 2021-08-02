@@ -26,6 +26,97 @@ p {
   }
 }
 
+//////////////////////////////////// MODE ////////////////////////////////////
+
+.dark-mode {
+  background: #1B1B1B;
+  h1, h2, h4 {
+    color: #BBBBBB;
+  }
+  p {
+    color: #E4E4E4;
+  }
+  div, img {
+    border-color: #444444 !important;
+  }
+  .linear-bg {
+    background: linear-gradient(to right, #221250, #542F6A) !important;
+  }
+  .carousel-indicators {
+    .active {
+      background: -webkit-linear-gradient(45deg, #311798, #A73CD6) !important;
+    }
+    li {
+      background: #292929;
+    }
+  }
+  .social-links, .nav-pills {
+    a {
+      color: #BBBBBB;
+      &:hover {
+        text-decoration: none;
+        background: -webkit-linear-gradient(45deg, #311798, #A73CD6);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .active {
+      text-decoration: none;
+      background: -webkit-linear-gradient(45deg, #311798, #A73CD6);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .testimonial-image {
+    background-image: asset_url('dark-lw-img.png');
+    @include for-small-devices-down {
+      background-image: asset_url('le-wagon-logo.png');
+    }
+  }
+}
+
+.light-mode {
+  background: #FFFFFF;
+  div, img {
+    border-color: #000000 !important;
+  }
+  .linear-bg {
+    background: linear-gradient(to right, #F3FFF7, #F3F4FF) !important;
+  }
+  .carousel-indicators {
+    .active {
+      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF) !important;
+    }
+    li {
+      background: #000000;
+    }
+  }
+  .social-links, .nav-pills {
+    a {
+      color: #000000;
+      &:hover {
+        text-decoration: none;
+        background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+    }
+    .active {
+      text-decoration: none;
+      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+  .testimonial-image {
+    background-image: asset_url('lw-img.png');
+    @include for-small-devices-down {
+      background-image: asset_url('le-wagon-logo.png');
+    }
+  }
+}
+
+//////////////////////////////////// NAVBAR ////////////////////////////////////
 
 .navbar {
   height: 80px;
@@ -47,14 +138,10 @@ p {
     font-size: 40px;
     color: #000000;
     transition: all 0.3s ease;
-    &:hover {
-      text-decoration: none;
-      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
   }
 }
+
+//////////////////////////////// FIRST SECTION /////////////////////////////////
 
 .max-width {
   max-width: 1260px;
@@ -62,17 +149,17 @@ p {
 }
 
 .container {
-  border-left: 1px solid #000000;
-  border-right: 1px solid #000000;
+  border-left: 1px solid;
+  border-right: 1px solid;
   padding: 0;
 }
 
 .top-line {
-  border-top: 1px solid #000000;
+  border-top: 1px solid;
 }
 
 .bottom-line {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid;
 }
 
 .min-height {
@@ -81,10 +168,9 @@ p {
 
 .banner {
   min-height: 80vh;
-  border-top: 1px solid #000000;
-  border-bottom: 1px solid #000000;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
   position: relative;
-  background: linear-gradient(to right, #F3FFF7, #F3F4FF);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -146,7 +232,7 @@ p {
 }
 
 .horiz-line {
-  border-bottom: 1px solid #000000;
+  border-bottom: 1px solid;
   position: absolute;
   left: 0;
   right: 0;
@@ -157,7 +243,7 @@ p {
 }
 
 .vert-line {
-  border-right: 1px solid #000000;
+  border-right: 1px solid;
   position: absolute;
   right: 80px;
   bottom: 0;
@@ -173,7 +259,7 @@ p {
   bottom: 40px;
   right: 40px;
   border-radius: 50%;
-  border: 1px solid #000000;
+  border: 1px solid;
   @include for-small-devices-down {
     width: 80px;
     bottom: 40px;
@@ -239,25 +325,12 @@ p {
 
 .nav-pills {
   a {
-    background-color: #FFFFFF;
-    color: #000000;
+    background-color: transparent;
     font-family: "DM Serif Display", "serif";
     font-size: 26px;
     @include for-xsmall-phone-only {
       font-size: 20px;
     }
-    &:hover {
-      text-decoration: none;
-      background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-  }
-  .active {
-    text-decoration: none !important;
-    background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF) !important;
-    -webkit-background-clip: text !important;
-    -webkit-text-fill-color: transparent !important;
   }
 }
 
@@ -267,11 +340,7 @@ p {
     width: 80%;
     margin: 0 auto;
     bottom: 60px;
-    .active {
-        background: -webkit-linear-gradient(45deg, #7DFFA9, #7E8AFF) !important;
-      }
     li {
-      background: #000000;
       border: none;
       margin: 0;
       flex: 1;
@@ -360,13 +429,11 @@ p {
 .testimonial-image {
   height: 100%;
   width: 260px;
-  background-image: asset_url('le-wagon-testimonial-image.png');
   background-size: cover;
   background-position: center;
   flex-shrink: 0;
   border-right: 1px solid #000000;
   @include for-small-devices-down {
-    background-image: asset_url('le-wagon-logo.png');
     width: 80px;
     height: 80px;
     margin: 16px 16px 0;
