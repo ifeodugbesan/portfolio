@@ -19,22 +19,29 @@
     <h1 class="pl-4">Projects</h1>
     <div class="row m-0 projects-row">
       <div class="mid-line"></div>
-      <div class="py-5 position-relative h-50">
-        <div class="project-card">
-          <%= image_tag 'foenix-card.png', class: 'project-image', alt: 'foenix logo' %>
+      <div class="col-5 col-sm-4">
+        <div class="py-5 position-relative h-50">
+          <div class="project-card" data-toggle="modal" data-target="#foenixCoding" data-placement="top" title="Foenix Coding">
+            <%= image_tag 'foenix-coding.png', class: 'project-image', alt: 'foenix logo' %>
+          </div>
         </div>
       </div>
-      <div class="py-5 position-relative h-50">
-        <div class="project-card">
-          <%= image_tag 'foenix-card.png', class: 'project-image', alt: 'foenix logo' %>
+      <div class="col-5 col-sm-4">
+        <div class="py-5 position-relative h-50">
+          <div class="project-card" data-toggle="modal" data-target="#theNet" data-placement="top" title="The Net">
+            <%= image_tag 'the-net.png', class: 'project-image', alt: 'foenix logo' %>
+          </div>
         </div>
       </div>
-      <div class="py-5 position-relative h-50">
-        <div class="project-card">
-          <%= image_tag 'foenix-card.png', class: 'project-image', alt: 'foenix logo' %>
+      <!-- <div class="col-3">
+        <div class="py-5 position-relative h-50">
+          <div class="project-card" data-toggle="modal" data-target="#loopBeauty" data-placement="top" title="Loop Beauty">
+            <%#= image_tag 'foenix-card.png', class: 'project-image', alt: 'foenix logo' %>
+          </div>
         </div>
-      </div>
+      </div> -->
     </div>
+    <%= render 'project_modals' %>
   </div>
   <div class="testimonials">
     <h1 class="pl-4 pb-4">Testimonials</h1>
@@ -55,65 +62,15 @@
             <li data-target="#clientsCarousel" data-slide-to="2"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image" style="background-image: url('https://media-exp1.licdn.com/dms/image/C5603AQE_42-swxWlCw/profile-displayphoto-shrink_400_400/0/1540331575134?e=1632960000&v=beta&t=306erp3JMSZP1mbQSMhZULReelt9eET2xc5Ztmkkaf8')"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Ben Fanning</h2>
-                    <h4 class="pb-0 pb-md-3">Founder at Hoxton Digital</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote', alt: 'closing quote' %>
-                      <p>Ife was the first person I hired at Hoxton Digital and he is the first person I would hire if I started a new business tomorrow. He is hard working, utterly dependable and lifts the spirits of everyone he works with! Ife is the first person I turn to for a second opinion on frontend matters, his ability to cast a critical eye over a design and suggest meaningful ways to improve the UI & UX of the application has been a priceless tool for me over the years. He constantly strives to do his job in the best way possible as well as to help others to do theirs. I hope I get the opportunity to work with him in the future and I would absolutely recommend him to anyone in need of a frontend developer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image" style="background-image: url('https://media-exp1.licdn.com/dms/image/C5603AQE_42-swxWlCw/profile-displayphoto-shrink_400_400/0/1540331575134?e=1632960000&v=beta&t=306erp3JMSZP1mbQSMhZULReelt9eET2xc5Ztmkkaf8')"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Ben Fanning</h2>
-                    <h4 class="pb-0 pb-md-3">Founder at Hoxton Digital</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife was the first person I hired at Hoxton Digital and he is the first person I would hire if I started a new business tomorrow. He is hard working, utterly dependable and lifts the spirits of everyone he works with! Ife is the first person I turn to for a second opinion on frontend matters, his ability to cast a critical eye over a design and suggest meaningful ways to improve the UI & UX of the application has been a priceless tool for me over the years. He constantly strives to do his job in the best way possible as well as to help others to do theirs. I hope I get the opportunity to work with him in the future and I would absolutely recommend him to anyone in need of a frontend developer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image" style="background-image: url('https://media-exp1.licdn.com/dms/image/C5603AQE_42-swxWlCw/profile-displayphoto-shrink_400_400/0/1540331575134?e=1632960000&v=beta&t=306erp3JMSZP1mbQSMhZULReelt9eET2xc5Ztmkkaf8')"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Ben Fanning</h2>
-                    <h4 class="pb-0 pb-md-3">Founder at Hoxton Digital</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife was the first person I hired at Hoxton Digital and he is the first person I would hire if I started a new business tomorrow. He is hard working, utterly dependable and lifts the spirits of everyone he works with! Ife is the first person I turn to for a second opinion on frontend matters, his ability to cast a critical eye over a design and suggest meaningful ways to improve the UI & UX of the application has been a priceless tool for me over the years. He constantly strives to do his job in the best way possible as well as to help others to do theirs. I hope I get the opportunity to work with him in the future and I would absolutely recommend him to anyone in need of a frontend developer.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <%= render 'client_testimonials' %>
           </div>
-          <a class="carousel-control-prev" href="#clientsCarousel" role="button" data-slide="prev">
+          <a class="carousel-control-prev main-controls" href="#clientsCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
               <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#clientsCarousel" role="button" data-slide="next">
+          <a class="carousel-control-next main-controls" href="#clientsCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
               <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
@@ -132,116 +89,15 @@
             <li data-target="#studentsCarousel" data-slide-to="5"></li>
           </ol>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #599</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Loved Ife as a TA, he clearly has a wealth of experience, and it really showed in how quick he'd resolve tickets. Ife also would always try to hint at answers before giving them away, this really helps. Super chill and friendly, sympathetic with students and patient.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #522</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife was an outstanding teacher and I'm really glad he was assigned to our group for our final projects. He helped us implement some complex features and was great from start to finish. We asked a lot of difficult questions and he helped us work through each one in a clear and structured way. I really enjoyed working with Ife and can't recommend him enough!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #319</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife is incredibly personable and is always such a pleasure to work with. He'll help to guide a student to the right answer, without giving it to them straight away, and has been incredibly helpful in explaining some key points in various coding topics.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #319</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife is incredibly personable and is always such a pleasure to work with. He'll help to guide a student to the right answer, without giving it to them straight away, and has been incredibly helpful in explaining some key points in various coding topics.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #287</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>Ife is amazing. He is great at explaining stuff, he goes over everything with you, step by step, and has patience to explain even the most basic things to you. Absolutely loved having Ife as my teacher.</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="row m-0 projects-row">
-                <div class="mid-line"></div>
-                <div class="testimonial-card <%= @dark_mode ? 'dark-bg' : 'light-bg' %>">
-                  <div class="testimonial-image"></div>
-                  <div class="testimonial-content p-3">
-                    <h2>Le Wagon London - Batch #222</h2>
-                    <h4 class="pb-0 pb-md-3">Anonymous review</h4>
-                    <div class="testimonial-message">
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote left-quote', alt: 'opening quote' %>
-                      <%= image_tag "#{@dark_mode ? 'dark-quote.png' : 'quote.png'}", class: 'quote right-quote', alt: 'closing quote' %>
-                      <p>IFE!!!! Incredible TA!!! One of my favs. All round great guy! Help me sooooo much with certain tickets that literally took 1 hour. He was extremely patience! And communicated so well. Not bad word to say!!!</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <%= render 'student_testimonials' %>
           </div>
-          <a class="carousel-control-prev" href="#studentsCarousel" role="button" data-slide="prev">
+          <a class="carousel-control-prev main-controls" href="#studentsCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
               <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Previous</span>
           </a>
-          <a class="carousel-control-next" href="#studentsCarousel" role="button" data-slide="next">
+          <a class="carousel-control-next main-controls" href="#studentsCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
               <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
