@@ -329,10 +329,16 @@ p {
   background: linear-gradient(to right, #F3FFF7, #F3F4FF);
 }
 
-.projects-row {
+.projects-row, .testimonials-row {
   padding: 60px 0;
   position: relative;
   justify-content: space-evenly;
+}
+
+.projects-row {
+  @include for-small-devices-down {
+    padding: 0;
+  }
 }
 
 .project-card {
