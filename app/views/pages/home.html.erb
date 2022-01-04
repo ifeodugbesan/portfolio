@@ -6,14 +6,19 @@
     </div>
   </div>
   <div class="bio">
-    <h1>A bit about me</h1>
+    <h1>A line about me</h1>
+    <p>Hi! The name's Ife and I'm a full stack web developer. I am currently a self-employed freelancer that is on the hunt for opportunities to further develop my skills and knowledge.</p>
+
   </div>
   <div class="le-wagon">
     <div class="horiz-line"></div>
     <div class="vert-line"></div>
-    <%= image_tag 'le-wagon-logo.png', class: "lw-logo #{ @dark_mode ? 'dark-border' : 'light-border' }", alt: 'le wagon logo' %>
+    <%= link_to 'https://www.lewagon.com', target: '_blank' do %>
+      <%= image_tag 'le-wagon-logo.png', class: "lw-logo #{ @dark_mode ? 'dark-border' : 'light-border' }", alt: 'le wagon logo' %>
+    <% end %>
     <h1>Le Wagon</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sed voluptatem nulla, fuga inventore dolore debitis ex consequatur aliquam quas recusandae cumque quidem nemo, eos hic delectus dolorum eveniet labore?</p>
+    <p>Since completing the 9 week intensive web development bootcamp with Le Wagon I've been able build on my skills and knowledge through various freelance projects.</p>
+    <p>Also, as a teaching assistant for Le Wagon, I've taught on 18+ web development bootcamps. Being someone that has gone through the same experience, I am able to resignate with students and guide them in the best way I know how.</p>
   </div>
   <div class="projects py-4 linear-bg">
     <h1 class="pl-3 pl-md-4">Projects</h1>
@@ -28,15 +33,8 @@
       </div>
       <div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3">
         <div class="py-3 py-md-5 position-relative">
-          <div class="project-card" data-toggle="modal" data-target="#theNet" data-placement="top" title="The Net">
-            <%= image_tag 'the-net.png', class: 'project-image', alt: 'foenix logo' %>
-          </div>
-        </div>
-      </div>
-      <div class="col-6 col-md-4">
-        <div class="py-0 py-md-5 position-relative">
-          <div class="project-card" data-toggle="modal" data-target="#lawFairy" data-placement="top" title="Law Fairy">
-            <%= image_tag 'law-fairy.png', class: 'project-image', alt: 'foenix logo' %>
+          <div class="project-card" data-toggle="modal" data-target="#theNet" data-placement="top" title="LoopBeauty">
+            <%= image_tag 'loop-beauty.png', class: 'project-image', alt: 'foenix logo' %>
           </div>
         </div>
       </div>
@@ -58,24 +56,24 @@
         <div id="clientsCarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#clientsCarousel" data-slide-to="0" class="active"></li>
-            <li data-target="#clientsCarousel" data-slide-to="1"></li>
-            <li data-target="#clientsCarousel" data-slide-to="2"></li>
+            <!-- <li data-target="#clientsCarousel" data-slide-to="1"></li> -->
+            <!-- <li data-target="#clientsCarousel" data-slide-to="2"></li> -->
           </ol>
           <div class="carousel-inner">
             <%= render 'client_testimonials' %>
           </div>
-          <a class="carousel-control-prev main-controls" href="#clientsCarousel" role="button" data-slide="prev">
+         <!--  <a class="carousel-control-prev main-controls" href="#clientsCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
-              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+              <%#= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next main-controls" href="#clientsCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
-              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+              <%#= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Next</span>
-          </a>
+          </a> -->
         </div>
       </div>
       <div class="tab-pane fade" id="pills-students" role="tabpanel" aria-labelledby="pills-students-tab">
