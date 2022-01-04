@@ -29,6 +29,10 @@ p {
   }
 }
 
+small {
+  font-size: 6px;
+}
+
 //////////////////////////////////// MODE ////////////////////////////////////
 
 .dark-mode {
@@ -36,7 +40,7 @@ p {
   h1, h2, h4 {
     color: #BBBBBB;
   }
-  p {
+  p, small {
     color: #E4E4E4;
   }
   div, img {
