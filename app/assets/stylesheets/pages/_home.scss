@@ -24,12 +24,14 @@ h4 {
 }
 
 p {
+  font-weight: 200;
   @include for-phone-only {
     font-size: 14px;
   }
 }
 
 small {
+  font-weight: 200;
   font-size: 6px;
 }
 
@@ -45,6 +47,9 @@ small {
   }
   div, img {
     border-color: #444444 !important;
+  }
+  .main-title h1 {
+    text-shadow: -4px 4px #686868;
   }
   .linear-bg {
     background: linear-gradient(to right, #221250, #542F6A) !important;
@@ -211,6 +216,9 @@ small {
 
 .min-height {
   min-height: 100vh;
+}
+.main-title h1 {
+  text-shadow: -4px 4px #a9c5ba;
 }
 
 .banner {
