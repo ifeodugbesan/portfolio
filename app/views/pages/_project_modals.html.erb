@@ -1,3 +1,6 @@
+<!-- FOENIX CODING -->
+
+
 <div class="modal fade p-3 p-3" id="foenixCoding" tabindex="-1" aria-labelledby="foenixCodingLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -44,6 +47,8 @@
   </div>
 </div>
 
+<!-- THE NET -->
+
 <div class="modal fade p-3" id="theNet" tabindex="-1" aria-labelledby="theNetLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content">
@@ -81,6 +86,99 @@
           <h4 class="modal-title mb-1" id="theNetLabel">LoopBeauty</h4>
           <p class="">Your destination for the best in beauty for women of colour. We partner with your favourite experts to curate the best in beauty products. Perfect your look in one place.</p>
           <%= link_to 'View Website', 'https://www.myloopbeauty.com', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
+        </div>
+      </div>
+      <div class="modal-footer pt-0">
+        <p class="modal-close" data-dismiss="modal">Close</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- WATER ACCESS RWANDA -->
+
+<div class="modal fade p-3" id="waterAccessRwanda" tabindex="-1" aria-labelledby="waterAccessRwandaLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div id="waterAccessRwandaControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag 'war-1.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'war-2.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'war-3.png', class: 'w-100' %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#waterAccessRwandaControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#waterAccessRwandaControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="pt-3 px-3">
+          <h4 class="modal-title mb-1" id="waterAccessRwandaLabel">Water Access Rwanda - Maintenance Tracker</h4>
+          <p class="">We deploy innovative, capital-efficient and next-level services and systems to provide safe water to mainly rural and small town dwellers in Africa.</p>
+          <%#= link_to 'View Website', 'http://idego.herokuapp.com/', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
+        </div>
+      </div>
+      <div class="modal-footer pt-0">
+        <p class="modal-close" data-dismiss="modal">Close</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- IDEGO -->
+
+<div class="modal fade p-3" id="idego" tabindex="-1" aria-labelledby="idegoLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div id="idegoControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag 'idego-1.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'idego-2.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'idego-3.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'idego-4.png', class: 'w-100' %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#idegoControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#idegoControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="pt-3 px-3">
+          <h4 class="modal-title mb-1" id="idegoLabel">Idego</h4>
+          <p class="">idego is a social impact accelerator that helps startups and aspiring businesses in Eastern Africa to benefit from digital transformation and our global network, and by that to develop their businesses in a sustainable way.</p>
+          <%= link_to 'View Website', 'http://idego.herokuapp.com/', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
         </div>
       </div>
       <div class="modal-footer pt-0">

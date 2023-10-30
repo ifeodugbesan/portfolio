@@ -271,10 +271,21 @@ small {
 /////////////////////////////////// LE WAGON ///////////////////////////////////
 
 .le-wagon {
-  min-height: 40vh;
+  min-height: 30vh;
   border-bottom: 1px solid #000000;
   padding: 24px 220px 160px 24px;
   position: relative;
+
+  // VERT LINE
+
+  .vert-line {
+    right: 80px;
+    @include for-phone-only {
+      right: 60px;
+    }
+  }
+
+  // VERT LINE
   @include for-medium-devices-down {
     padding: 24px 160px 160px 24px;
   }
@@ -300,12 +311,9 @@ small {
 .vert-line {
   border-right: 1px solid;
   position: absolute;
-  right: 80px;
+  right: 50%;
   bottom: 0;
   top: 0;
-  @include for-phone-only {
-    right: 60px;
-  }
 }
 
 .lw-logo {
@@ -313,7 +321,7 @@ small {
   width: 80px;
   bottom: 40px;
   right: 40px;
-  border-radius: 50%;
+  border-radius: 8px;
   border: 1px solid;
   @include for-small-devices-down {
     width: 80px;
@@ -373,6 +381,12 @@ small {
   left: 0;
   top: 50%;
   border-bottom: 1px solid #000000;
+}
+
+.middle {
+  @include for-small-devices-down {
+    display: none;
+  }
 }
 
 .modal-content {

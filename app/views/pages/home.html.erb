@@ -6,8 +6,9 @@
     </div>
   </div>
   <div class="bio">
-    <h1>A line about me</h1>
-    <p class="mb-0">Hi! The name's Ife and I'm a full stack web developer. I am currently a self-employed freelancer that is on the hunt for opportunities to further develop my skills and knowledge.</p>
+    <h1>A bit about me</h1>
+    <p class="mb-2">Hello!</p>
+    <p class="mb-0">I’m Ife, an experienced Ruby on Rails full stack web developer with a passion for crafting robust, user-friendly applications. Proficient in translating designs into fully functional web apps. I'm also a teaching assistant at Le Wagon (coding bootcamp) which allows me to guide students on their RoR journey.</p>
     <small>(P.S. Click the logo at the top to switch to dark mode.)</small>
   </div>
   <div class="le-wagon">
@@ -18,23 +19,58 @@
     <% end %>
     <h1>Le Wagon</h1>
     <p>Since completing the 9 week intensive web development bootcamp with Le Wagon I've been able to build on my skills and knowledge through various freelance projects.</p>
-    <p>Also, as a teaching assistant for Le Wagon, I've taught on 18+ web development bootcamps. Being someone that has gone through the same experience, I am able to resignate with students and guide them in the best way I know how.</p>
+    <p>Also, as a teaching assistant for Le Wagon, I've taught on 25+ web development bootcamps. Being someone that has gone through the same experience, I am able to resignate with students and guide them in the best way I know how.</p>
   </div>
   <div class="projects py-4 linear-bg">
     <h1 class="pl-3 pl-md-4">Projects</h1>
-    <div class="row m-0 px-3 projects-row">
-      <div class="mid-line d-none d-md-block"></div>
-      <div class="col-6 col-md-4 pl-0 pl-md-3 pr-2 pr-md-3">
-        <div class="py-3 py-md-5 position-relative">
+    <div class="row m-0 px-3 pb-0 projects-row">
+      <div class="mid-line d-none d-md-block" style="top: calc(50% + 48px);"></div>
+      <div class="col-6 col-md-4 pl-0 pl-md-3 pr-2 pr-md-3 mb-3 mb-md-0">
+        <div class="pt-3 pt-md-5 position-relative">
           <div class="project-card" data-toggle="modal" data-target="#foenixCoding" data-placement="top" title="Foenix Coding">
             <%= image_tag 'foenix-coding.png', class: 'project-image', alt: 'foenix logo' %>
           </div>
         </div>
       </div>
+      <div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3 mb-3 mb-md-0">
+        <div class="pt-3 pt-md-5 position-relative">
+          <div class="project-card" data-toggle="modal" data-target="#idego" data-placement="top" title="LoopBeauty">
+            <%= image_tag 'loop-beauty.png', class: 'project-image', alt: 'foenix logo' %>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-0 px-3 py-0 projects-row middle">
+      <div class="col-6 col-md-4 pl-0 pl-md-3 pr-2 pr-md-3">
+        <div class="py-3 py-md-5 position-relative">
+          <div class="project-card">
+            <div class="vert-line d-none d-md-block"></div>
+          </div>
+        </div>
+      </div>
       <div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3">
         <div class="py-3 py-md-5 position-relative">
-          <div class="project-card" data-toggle="modal" data-target="#theNet" data-placement="top" title="LoopBeauty">
-            <%= image_tag 'loop-beauty.png', class: 'project-image', alt: 'foenix logo' %>
+          <div class="project-card">
+            <div class="vert-line d-none d-md-block"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-0 px-3 pt-0 projects-row">
+      <div class="mid-line d-none d-md-block" style="top: calc(50% - 48px);"></div>
+      <div class="col-6 col-md-4 pl-0 pl-md-3 pr-2 pr-md-3">
+        <div class="pb-3 pb-md-5 position-relative">
+          <div class="project-card" data-toggle="modal" data-target="#waterAccessRwanda" data-placement="top" title="Water Access Rwanda Maintenance Tracker">
+            <%= image_tag 'war-card.png', class: 'project-image', alt: 'foenix logo' %>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3">
+        <div class="pb-3 pb-md-5 position-relative">
+          <div class="project-card" data-toggle="modal" data-target="#idego" data-placement="top" title="Idego">
+            <%= image_tag 'idego.png', class: 'project-image', alt: 'foenix logo' %>
           </div>
         </div>
       </div>
