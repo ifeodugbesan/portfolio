@@ -191,6 +191,7 @@ small {
 .container {
   border-left: 1px solid;
   border-right: 1px solid;
+  transition: 0.4s;
   padding: 0;
 }
 
@@ -288,9 +289,13 @@ small {
 .horiz-line {
   border-bottom: 1px solid;
   position: absolute;
-  left: 0;
+  // left: 0;
   right: 0;
+  width: 0;
+  max-width: 100% !important;
   bottom: 80px;
+  transition: width 0.4s ease;
+  transition-delay: 0.4s;
   @include for-phone-only {
     bottom: 60px;
   }
@@ -301,7 +306,28 @@ small {
   position: absolute;
   right: 50%;
   bottom: 0;
+  height: 0;
+  max-height: 100% !important;
+  // top: 0;
+  transition: height 0.4s ease;
+}
+
+.vert-line-one, .vert-line-two, .vert-line-three, .vert-line-four {
+  bottom: unset;
   top: 0;
+  transition: height 0.4s ease;
+}
+
+.increase-height {
+  height: 100% !important; /* Adjust the height as needed */
+}
+
+.increase-width {
+  width: 100% !important; /* Adjust the height as needed */
+}
+
+.line-delay {
+  transition-delay: 0.4s !important;
 }
 
 .lw-logo {
@@ -370,10 +396,12 @@ small {
 
 .mid-line {
   position: absolute;
-  width: 100%;
+  width: 0;
   left: 0;
   top: 50%;
   border-bottom: 1px solid #000000;
+  transition: width 0.4s ease;
+  
 }
 
 .middle {
