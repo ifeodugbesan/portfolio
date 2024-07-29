@@ -516,7 +516,7 @@ small {
 
 
 .testimonial-card {
-  min-height: 400px;
+  height: 515px;
   width: 80%;
   background: #FFFFFF;
   display: flex;
@@ -538,6 +538,10 @@ small {
   @include for-xsmall-phone-only {
     min-height: 540px;
   }
+}
+
+.testimonial-role {
+  color: #7DADE5;
 }
 
 .testimonial-image {
