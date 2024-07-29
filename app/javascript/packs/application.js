@@ -80,14 +80,10 @@ document.addEventListener('turbolinks:load', () => {
     // LE WAGON LINES ANIMATION
     if (isInViewport(leWagon)) {
       vert.classList.add('increase-height');
-      // setTimeout(() => {
-        horiz.classList.add('increase-width');
-      // }, 400);
+      horiz.classList.add('increase-width');
     } else {
       vert.classList.remove('increase-height');
-      // setTimeout(() => {
-        horiz.classList.remove('increase-width');
-      // }, 400);
+      horiz.classList.remove('increase-width');
     };
     
     // PROJECT LINES ANIMATION
@@ -123,6 +119,5 @@ document.addEventListener('turbolinks:load', () => {
       studentTestimonialsLines.forEach(line => line.classList.remove('increase-width'));
       clientTestimonialsLines.forEach(line => line.classList.remove('increase-width'));
     };
-
   });
 });
