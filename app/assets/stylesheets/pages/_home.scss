@@ -173,7 +173,7 @@ small {
 }
 
 .social-links {
-  line-height: 16px;
+  line-height: 13px;
   a {
     font-size: 40px;
     color: #000000;
@@ -524,19 +524,20 @@ small {
   z-index: 1;
   border: 1px solid #000000;
   border-bottom: 0;
+  @include for-large-devices-down {
+    height: 574px;
+  }
   @include for-medium-devices-down {
     width: 94%;
-    min-height: 476px;
+    height: 672px;
   }
   @include for-small-devices-down {
     flex-direction: column;
+    height: 652px
   }
   @include for-phone-only {
     width: 90%;
-    min-height: 620px;
-  }
-  @include for-xsmall-phone-only {
-    min-height: 540px;
+    height: unset;
   }
 }
 
