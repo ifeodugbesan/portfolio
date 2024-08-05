@@ -10,6 +10,9 @@
     <p class="mb-2">Hello!</p>
     <p class="mb-0">I’m Ife, an experienced Ruby on Rails full stack web developer with a passion for crafting robust, user-friendly applications. Proficient in translating designs into fully functional web apps. I'm also a teaching assistant at Le Wagon (coding bootcamp) which allows me to guide students on their RoR journey.</p>
     <small>(P.S. Click the logo at the top to switch to dark mode.)</small>
+    <div class="pt-2">
+      <a href="/pdf/ife_odugbesan_cv.pdf" class="primary-button" target="_blank">View CV</a>
+    </div>
   </div>
   <div class="le-wagon">
     <div class="horiz-line"></div>
@@ -103,14 +106,23 @@
           </div>
         </div>
       </div>
-      <div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3">
-        <div class="pb-3 pb-md-5 h-100 position-relative">
-          <div class="project-card h-100">
-            <%= image_tag @dark_mode ? 'project-placeholder-dark.png' : 'project-placeholder-light.png', class: 'project-image project-placeholder', alt: 'the clementine project logo' %>
+      <div class="col-6 col-md-4 pl-0 pl-md-3 pr-2 pr-md-3">
+        <div class="pb-3 pb-md-5 position-relative">
+          <div class="project-card" data-toggle="modal" data-target="#codebreakers" data-placement="top" title="Codebreakers">
+            <%= image_tag 'codebreakers-card.png', class: 'project-image', alt: 'codebreakers logo' %>
           </div>
         </div>
       </div>
     </div>
+
+    <!--<div class="col-6 col-md-4 pr-0 pr-md-3 pl-2 pl-md-3">
+      <div class="pb-3 pb-md-5 h-100 position-relative">
+        <div class="project-card h-100">
+          <%#= image_tag @dark_mode ? 'project-placeholder-dark.png' : 'project-placeholder-light.png', class: 'project-image project-placeholder', alt: 'the clementine project logo' %>-->
+<!--        </div>
+      </div>
+    </div>-->
+
     <%= render 'project_modals' %>
   </div>
   <div class="testimonials">

@@ -34,7 +34,7 @@
           </a>
         </div>
 
-        <div class="pt-3 px-3">
+        <div class="pt-3 px-3 project-modal-info">
           <h4 class="modal-title mb-1" id="foenixCodingLabel">Foenix Coding</h4>
           <p class="">Industrial Marking and Coding printers to print in high resolutions on every material.</p>
           <%= link_to 'View Website', 'https://www.foenixcoding.com', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
@@ -82,7 +82,7 @@
           </a>
         </div>
 
-        <div class="pt-3 px-3">
+        <div class="pt-3 px-3 project-modal-info">
           <h4 class="modal-title mb-1" id="theNetLabel">LoopBeauty</h4>
           <p class="">Your destination for the best in beauty for women of colour. We partner with your favourite experts to curate the best in beauty products. Perfect your look in one place.</p>
           <%= link_to 'View Website', 'https://www.myloopbeauty.com', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
@@ -127,10 +127,9 @@
           </a>
         </div>
 
-        <div class="pt-3 px-3">
+        <div class="pt-3 px-3 project-modal-info">
           <h4 class="modal-title mb-1" id="waterAccessRwandaLabel">Water Access Rwanda - Maintenance Tracker</h4>
-          <p class="">We deploy innovative, capital-efficient and next-level services and systems to provide safe water to mainly rural and small town dwellers in Africa.</p>
-          <%#= link_to 'View Website', 'http://idego.herokuapp.com/', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
+          <p class="mb-0">We deploy innovative, capital-efficient and next-level services and systems to provide safe water to mainly rural and small town dwellers in Africa.</p>
         </div>
       </div>
       <div class="modal-footer pt-0">
@@ -175,7 +174,7 @@
           </a>
         </div>
 
-        <div class="pt-3 px-3">
+        <div class="pt-3 px-3 project-modal-info">
           <h4 class="modal-title mb-1" id="idegoLabel">Idego</h4>
           <p class="">idego is a social impact accelerator that helps startups and aspiring businesses in Eastern Africa to benefit from digital transformation and our global network, and by that to develop their businesses in a sustainable way.</p>
           <%= link_to 'View Website', 'http://idego.herokuapp.com/', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
@@ -220,10 +219,66 @@
           </a>
         </div>
 
-        <div class="pt-3 px-3">
+        <div class="pt-3 px-3 project-modal-info">
           <h4 class="modal-title mb-1" id="theClementineProjectLabel">The Clementine Project</h4>
           <p class="">Our project supports seamstresses in Rwanda to earn an independent and self-sufficient living.</p>
           <%= link_to 'View Website', 'https://www.theclementineproject.de', class: 'primary-button', target: '_blank', rel: 'noopener'  %>
+        </div>
+      </div>
+      <div class="modal-footer pt-0">
+        <p class="modal-close" data-dismiss="modal">Close</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- THE CLEMENTINE PROJECT -->
+
+<div class="modal fade p-3" id="codebreakers" tabindex="-1" aria-labelledby="codebreakersLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-body p-0">
+        <div id="codebreakersControls" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <%= image_tag 'codebreakers-1.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-2.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-3.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-4.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-5.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-6.png', class: 'w-100' %>
+            </div>
+            <div class="carousel-item">
+              <%= image_tag 'codebreakers-7.png', class: 'w-100' %>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#codebreakersControls" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#codebreakersControls" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true">
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+            </span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+
+        <div class="pt-3 px-3 project-modal-info">
+          <h4 class="modal-title mb-1" id="codebreakersLabel">Codebreakers</h4>
+          <p class="mb-0">Complete coding challenges to level up your coding knowledge & win prizes! Suitable for beginners.</p>
         </div>
       </div>
       <div class="modal-footer pt-0">
