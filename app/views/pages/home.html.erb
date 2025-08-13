@@ -140,24 +140,24 @@
         <div id="clientsCarousel" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#clientsCarousel" data-slide-to="0" class="active"></li>
-            <!-- <li data-target="#clientsCarousel" data-slide-to="1"></li> -->
-            <!-- <li data-target="#clientsCarousel" data-slide-to="2"></li> -->
+            <li data-target="#clientsCarousel" data-slide-to="1"></li> 
+            <!--<li data-target="#clientsCarousel" data-slide-to="2"></li> -->
           </ol>
           <div class="carousel-inner">
             <%= render 'client_testimonials' %>
           </div>
-         <!--  <a class="carousel-control-prev main-controls" href="#clientsCarousel" role="button" data-slide="prev">
+           <a class="carousel-control-prev main-controls" href="#clientsCarousel" role="button" data-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true">
-              <%#= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Previous</span>
           </a>
           <a class="carousel-control-next main-controls" href="#clientsCarousel" role="button" data-slide="next">
             <span class="carousel-control-next-icon" aria-hidden="true">
-              <%#= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
+              <%= image_tag "#{@dark_mode ? 'dark-arrow.png' : 'arrow.png'}" %>
             </span>
             <span class="sr-only">Next</span>
-          </a> -->
+          </a> 
         </div>
       </div>
       <div class="tab-pane fade" id="pills-students" role="tabpanel" aria-labelledby="pills-students-tab">

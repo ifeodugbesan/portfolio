@@ -1,5 +1,6 @@
 body {
   background: #FFFFFF;
+  padding: 60px 0
 }
 
 h1 {
@@ -86,6 +87,7 @@ small {
   }
   .modal-content {
     background: #1B1B1B;
+    border-radius: 16px;
   }
 
   .testimonial-role {
@@ -106,8 +108,9 @@ small {
   }
   .primary-button {
     border: 1px solid #444444;
-    padding: 6px 10px;
+    padding: 6px 12px;
     display: inline-block;
+    border-radius: 12px;
   }
 }
 
@@ -151,6 +154,7 @@ small {
   }
   .modal-content {
     background: #FFFFFF;
+    border-radius: 16px;
   }
 
   .testimonial-role {
@@ -170,8 +174,9 @@ small {
   }
   .primary-button {
     border: 1px solid #000000;
-    padding: 6px 10px;
+    padding: 6px 12px;
     display: inline-block;
+    border-radius: 12px;
   }
 }
 
@@ -192,9 +197,9 @@ small {
 }
 
 .social-links {
-  line-height: 13px;
+  line-height: 12px;
   a {
-    font-size: 40px;
+    font-size: 28px;
     color: #000000;
     transition: all 0.3s ease;
   }
@@ -216,10 +221,12 @@ small {
 
 .top-line {
   border-top: 1px solid;
+  border-radius: 16px 16px 0 0;
 }
 
 .bottom-line {
   border-bottom: 1px solid;
+  border-radius: 0 0 16px 16px;
 }
 
 .min-height {
@@ -354,7 +361,7 @@ small {
   width: 80px;
   bottom: 40px;
   right: 40px;
-  border-radius: 8px;
+  border-radius: 12px;
   border: 1px solid;
   @include for-small-devices-down {
     width: 80px;
@@ -380,6 +387,12 @@ small {
 .projects {
   border-bottom: 1px solid #000000;
   background: linear-gradient(to right, #F3FFF7, #F3F4FF);
+}
+
+.project {
+  .carousel-inner {
+    border-radius: 15px 15px 0 0;
+  }
 }
 
 .projects-row, .testimonials-row {
@@ -411,6 +424,7 @@ small {
   position: relative;
   z-index: 1;
   width: 100%;
+  border-radius: 16px;
 }
 
 .mid-line {
@@ -439,6 +453,9 @@ small {
 
 .modal-footer {
   border-top: none;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-right: 16px;
 }
 
 .modal-backdrop.show {
@@ -467,7 +484,7 @@ small {
 .carousel {
   .carousel-indicators {
     margin: 0;
-    width: 80%;
+    width: 77%;
     margin: 0 auto;
     bottom: 60px;
     li {
@@ -479,10 +496,10 @@ small {
 
     }
     @include for-medium-devices-down {
-      width: 94%;
+      width: 90%;
     }
     @include for-phone-only {
-      width: 90%;
+      width: 85%;
     }
   }
 }
@@ -542,7 +559,7 @@ small {
   position: relative;
   z-index: 1;
   border: 1px solid #000000;
-  border-bottom: 0;
+  border-radius: 16px;
   @include for-large-devices-down {
     height: 574px;
   }
@@ -567,6 +584,7 @@ small {
   background-position: center;
   flex-shrink: 0;
   border-right: 1px solid #000000;
+  border-radius: 15px 0 0 15px;
   @include for-small-devices-down {
     width: 80px;
     height: 80px;
@@ -579,6 +597,9 @@ small {
 .testimonial-message {
   position: relative;
   padding: 48px 0;
+  p {
+    font-size: 14px;
+  }
 }
 
 .quote {
