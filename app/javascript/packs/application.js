@@ -54,10 +54,14 @@ document.addEventListener('turbolinks:load', () => {
     })
   }
 
+  // ABOUT ME LINES ANIMATION
+  const aboutMe = document.querySelector('.about-me');
+  const amHoriz = aboutMe.querySelector('.horiz-line-am');
+  const amVert = aboutMe.querySelector('.vert-line-am');
 
   // LE WAGON LINES ANIMATION
   const leWagon = document.querySelector('.le-wagon');
-  const horiz = leWagon.querySelector('.horiz-line');
+  const horiz = leWagon.querySelector('.horiz-line-lw');
   const vert = leWagon.querySelector('.vert-line-lw');
 
   // PROJECT LINES ANIMATION
@@ -77,6 +81,15 @@ document.addEventListener('turbolinks:load', () => {
   const clientTestimonialsLines = testimonials.querySelectorAll('.client-testimonials-line');
   
   window.addEventListener('scroll', () => {
+    // ABOUT ME LINES ANIMATION
+    if (isInViewport(aboutMe)) {
+      amVert.classList.add('increase-height');
+      amHoriz.classList.add('increase-width');
+    } else {
+      amVert.classList.remove('increase-height');
+      amHoriz.classList.remove('increase-width');
+    };
+
     // LE WAGON LINES ANIMATION
     if (isInViewport(leWagon)) {
       vert.classList.add('increase-height');
