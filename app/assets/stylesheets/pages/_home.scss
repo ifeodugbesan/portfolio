@@ -1,6 +1,9 @@
 body {
   background: #FFFFFF;
-  padding: 60px 0
+  padding: 60px 0;
+  @include for-phone-only {
+    padding: 16px;
+  }
 }
 
 h1 {
@@ -112,6 +115,10 @@ small {
     display: inline-block;
     border-radius: 12px;
   }
+
+  .cv-btn {
+    background: #1B1B1B;
+  }
 }
 
 .light-mode {
@@ -177,6 +184,10 @@ small {
     padding: 6px 12px;
     display: inline-block;
     border-radius: 12px;
+  }
+
+  .cv-btn {
+    background: #FFFFFF;
   }
 }
 
@@ -285,10 +296,10 @@ small {
 
 /////////////////////////////////// LE WAGON ///////////////////////////////////
 
-.le-wagon {
+.le-wagon, .bio {
   min-height: 30vh;
   border-bottom: 1px solid #000000;
-  padding: 24px 220px 160px 24px;
+  padding: 24px 220px 110px 24px;
   position: relative;
 
   // VERT LINE
@@ -301,8 +312,9 @@ small {
   }
 
   // VERT LINE
+
   @include for-medium-devices-down {
-    padding: 24px 160px 160px 24px;
+    padding: 24px 160px 110px 24px;
   }
   @include for-small-devices-down {
     padding: 24px 120px 120px 24px;
@@ -375,13 +387,22 @@ small {
   }
 }
 
-///////////////////////////////////// BIO //////////////////////////////////////
+///////////////////////////////////// ABOUT ME //////////////////////////////////////
 
-.bio {
-  border-bottom: 1px solid #000000;
-  padding: 24px;
+.cv-btn {
+  position: absolute;
+  width: 92px;
+  bottom: 60px;
+  right: 36px;
+  
+  @include for-phone-only {
+      bottom: 40px;
+      right: 16px;
+  }
 }
 
+
+    
 /////////////////////////////////// PROJECTS ///////////////////////////////////
 
 .projects {
